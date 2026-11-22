@@ -1,0 +1,48 @@
+/* OFFPACK colors. Change a color here and it changes on every page. */
+:root {
+  color-scheme: dark;
+  --bg: #0B0F14;
+  --card: #12171D;
+  --line: #232A33;
+  --text: #F2F4F7;
+  --muted: #8A94A3;
+  --accent: #C0C8D0;
+  --on-accent: #0B0F14;
+  --mark: #C0C8D0;
+  --good: #22C17A;
+  --bad: #FF4D52;
+  --field: #12171D;
+  --focus: #C0C8D0;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --bg: #F5F7FA;
+    --card: #FFFFFF;
+    --line: #DDE2E8;
+    --text: #0B0F14;
+    --muted: #5B6572;
+    --accent: #5B6572;
+    --on-accent: #FFFFFF;
+    --mark: #6B7684;
+    --good: #0A7F55;
+    --bad: #D12A30;
+    --field: #FFFFFF;
+    --focus: #5B6572;
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #F5F7FA;
+  --card: #FFFFFF;
+  --line: #DDE2E8;
+  --text: #0B0F14;
+  --muted: #5B6572;
+  --accent: #5B6572;
+  --on-accent: #FFFFFF;
+  --mark: #6B7684;
+  --good: #0A7F55;
+  --bad: #D12A30;
+  --field: #FFFFFF;
+  --focus: #5B6572;
+}

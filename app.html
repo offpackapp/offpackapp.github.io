@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Offpack</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B0F14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F5F7FA" media="(prefers-color-scheme: light)">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;700&display=swap">
+<script>try{var t=localStorage.getItem('offpack_theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="264 222 520 520"><path fill="currentColor" fill-rule="evenodd" d="M632 291.14 L632 380 L714.38 380 A228 228 0 1 1 632 291.14 Z M389 485 a123 123 0 1 0 246 0 a123 123 0 1 0 -246 0 Z"/><rect x="665" y="245" width="100" height="100" style="fill:var(--mark)"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></symbol>
+  <symbol id="i-journal" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-ins" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div id="boot">Loading...</div>
+<header class="app-top">
+  <a class="brand" href="#home"><svg class="mark" aria-hidden="true"><use href="#lg"/></svg><span class="bname"><b>OFFPACK</b></span></a>
+  <div class="tools">
+    <a class="ib2" href="#pairs" aria-label="Search pairs"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></a>
+    <a class="ib2" href="#favorites" aria-label="Favorites"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></a>
+    <a class="me" id="me" href="#account" aria-label="Account">?</a>
+  </div>
+</header>
+<div class="demobar" id="demobar" hidden><span>Demo mode. Nothing here is saved.</span><span><a href="login.html?mode=signup"><u>Create free account</u></a> &nbsp; <a href="index.html"><u>Exit</u></a></span></div>
+<main class="app-main" id="view"></main>
+<nav class="tabs" aria-label="Main">
+  <a data-tab="home" href="#home"><svg aria-hidden="true"><use href="#i-home"/></svg>Home</a>
+  <a data-tab="journal" href="#journal"><svg aria-hidden="true"><use href="#i-journal"/></svg>Journal</a>
+  <a class="add" data-tab="add" href="#add" aria-label="Add trade"><span><svg aria-hidden="true" style="stroke-width:2.2"><use href="#i-plus"/></svg></span></a>
+  <a data-tab="calendar" href="#calendar"><svg aria-hidden="true"><use href="#i-cal"/></svg>Calendar</a>
+  <a data-tab="insights" href="#insights"><svg aria-hidden="true"><use href="#i-ins"/></svg>Insights</a>
+</nav>
+<div id="sheet" class="sheet" hidden></div>
+<div id="dlg" class="dlg" hidden><div class="dlg-box"><h2 id="dlg-title"></h2><p id="dlg-msg" class="muted"></p><div class="stack"><button type="button" class="btn" id="dlg-ok">OK</button><button type="button" class="btn ghost" id="dlg-no">Cancel</button></div></div></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

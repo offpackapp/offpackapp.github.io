@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Privacy, Terms and Risk | Offpack</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B0F14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F5F7FA" media="(prefers-color-scheme: light)">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;700&display=swap">
+<script>try{var t=localStorage.getItem('offpack_theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="264 222 520 520"><path fill="currentColor" fill-rule="evenodd" d="M632 291.14 L632 380 L714.38 380 A228 228 0 1 1 632 291.14 Z M389 485 a123 123 0 1 0 246 0 a123 123 0 1 0 -246 0 Z"/><rect x="665" y="245" width="100" height="100" style="fill:var(--mark)"/></symbol></svg>
+<header class="top wrap">
+  <a class="brand" href="index.html"><svg class="mark" aria-hidden="true"><use href="#lg"/></svg><span class="bname"><b>OFFPACK</b><small>Trading Journal</small></span></a>
+  <a class="toplink" href="login.html">Log in</a>
+</header>
+<main class="doc">
+  <p class="muted" style="font-size:13px">Last updated 22 November 2026. Plain-language draft, to be reviewed before public launch.</p>
+
+  <section id="privacy">
+    <h1>Privacy</h1>
+    <p>Offpack is a trading journal. This page explains what we keep and why. Questions: <a href="mailto:Offpackjournal@gmail.com">Offpackjournal@gmail.com</a>.</p>
+    <h3>What we store</h3>
+    <ul>
+      <li>Your email address and your password. Your password is stored scrambled (hashed) by our login provider. We never see it.</li>
+      <li>What you choose to add: your name, account size, currency and the trades you log, including prices, notes, how you felt, and screenshots.</li>
+      <li>Basic technical data, such as your IP address and device type, which our hosting and database providers keep in their normal logs.</li>
+    </ul>
+    <h3>Where it lives</h3>
+    <ul>
+      <li>Your account and trades are stored with Supabase, in the West EU (Ireland) region.</li>
+      <li>Live crypto prices come from public market-data services (Binance, with Coinbase as a backup). Your browser contacts them directly, so they see your IP address when you open a pair page or use the live price button.</li>
+      <li>The website is served by GitHub Pages. Fonts load from Google Fonts, which means Google sees your IP address when a page loads.</li>
+    </ul>
+    <h3>What we do not do</h3>
+    <ul>
+      <li>We do not sell your data and we do not show ads.</li>
+      <li>We do not use analytics or tracking tools at launch. If that changes, this page will say so first.</li>
+      <li>Rules in the database keep each account's data separate from other users.</li>
+    </ul>
+    <h3>Your choices</h3>
+    <p>You can download all your trades from the Account screen. To delete your account and everything in it, email us from the address on your account. Offpack is not meant for anyone under 18.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms</h2>
+    <ul>
+      <li>Offpack is free at launch. Features and plans may change. If we start charging, we will tell you first.</li>
+      <li>You are responsible for your own trades and decisions. Offpack only records what you enter.</li>
+      <li>Keep your login private. Do not misuse the service, attack it, or use it to break the law.</li>
+      <li>We work to keep Offpack running, but we cannot promise it will always be available or free of errors. Keep your own records of anything important.</li>
+      <li>We may suspend accounts that abuse the service.</li>
+      <li>To the extent the law allows, Offpack is provided as is, and we are not liable for trading losses or lost data.</li>
+    </ul>
+  </section>
+
+  <section id="risk">
+    <h2>Risk disclaimer</h2>
+    <ul>
+      <li>Offpack is a journaling tool. It is not financial, investment or trading advice.</li>
+      <li>Trading crypto, forex, gold and other leveraged products carries a high risk of loss. You can lose more than you expected, and sometimes more than you put in.</li>
+      <li>Insights show patterns in the trades you logged. They do not predict future results, and a small number of trades can mislead.</li>
+      <li>Any price, calculation or estimate shown may be delayed, rounded or wrong. Check it before you rely on it.</li>
+      <li>Past results do not guarantee future results. Every trade is your decision.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

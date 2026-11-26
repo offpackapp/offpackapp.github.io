@@ -3,6 +3,8 @@
    NEVER put a secret or service_role key in this file. */
 window.OFFPACK_HASH = location.hash;
 window.OFFPACK_SEARCH = location.search;
+/* Demo inside the app: when a logged-in user starts the demo, this tab behaves like app.html?demo=1 (see demo-switch.js). */
+try { if (sessionStorage.getItem('offpack_demo') === '1' && !/[?&]demo=1/.test(location.search)) window.OFFPACK_SEARCH = (location.search ? location.search + '&' : '?') + 'demo=1'; } catch (e) {}
 window.OFFPACK = {
   name: 'Offpack',
   siteUrl: 'https://offpackapp.github.io',
